@@ -75,13 +75,23 @@ h1 {
 	margin-bottom: 0px;
 	font-size: 4rem;
 }
-
 .container {
 	margin: 0 auto;
 	max-width: 600px;
 	text-align: center;
 
 }
+table {
+    margin: 10px;
+}
+th, td {
+    padding: 5px;
+    border: 1px solid #999;
+}
+th {
+    background: #ccc;
+}
+
 form span ,
 form input,
 form button {

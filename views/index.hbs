@@ -22,18 +22,35 @@
         <form action="/" method="post">
           <span>Enter your catalogue number:</span><input type="text" name="id"><button>Go</button>
         </form>
-        {{#each releaseData}}
-      <div>
-        <a href="/release/{{id}}">{{title}}</a>
-         {{country}} {{catno}} {{year}}
-        {{#each format}}
-        {{this}}
-        {{/each}}
-        {{price}}
-       </div>
-        {{/each}}
+        {{#if releaseData}}
+      <table>
+        <thead>
+          <th>Title</th>
+          <th>Country</th>
+          <th>Catalogue Number</th>
+          <th>Year</th>
+          <th>Format</th>
+          <th>Price</th>
+          <th>Add</th>
 
-      </form>
+      </thead>
+     {{#each releaseData}}
+      <tr>
+        <td>{{title}}</td>
+        <td>{{country}}</td>
+        <td>{{catno}}</td>
+        <td>{{year}}</td>
+        <td>
+          {{#each format}}
+            {{this}}
+          {{/each}}
+        </td>
+        <td>{{price}}</td>
+        <td><a href="Add">Add</a>
+      </tr>
+      {{/each}}
+      </table>
+      {{/if}}
     </section>
   </div>
  </div>
