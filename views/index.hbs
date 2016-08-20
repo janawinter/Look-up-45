@@ -2,26 +2,38 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- <script src="https://use.fontawesome.com/43b141b007.js"></script> -->
-  <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+  <script src="https://use.typekit.net/bkt2cmf.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <link rel="stylesheet" href="./styles/main.css" charset="utf-8">
   <title>Look up 45</title>
 </head>
-<div class="wrapper">
-<header>
-  <h1>Look up 45</h1>
-</header>
-</div>
 <body>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/45rpm.jpg" alt="this is an image" />
-</div>
-<section>
-  <form action="/" method="post">
-    Look up: <input type="text" name="id"><button>Go</button>
-  </form>
-  {{title}}
-</section>
-</form>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <h1>Look up 45</h1>
+      </div>
+    </header>
+    <div class="container">
+      <section>
+        <img src="/images/logo.png" alt="Look Up 45" />
+      <section>
+        <form action="/" method="post">
+          <span>Enter your catalogue number:</span><input type="text" name="id"><button>Go</button>
+        </form>
+        {{#each releaseData}}
+      <div>
+        <a href="/release/{{id}}">{{title}}</a>
+         {{country}} {{catno}} {{year}}
+        {{#each format}}
+        {{this}}
+        {{/each}}
+       </div>
+        {{/each}}
+      </form>
+    </section>
+  </div>
+ </div>
 </body>
 </html>

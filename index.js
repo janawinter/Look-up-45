@@ -17,6 +17,7 @@ app.use(express.static('public'))
 
 app.get('/', index.get)
 app.post('/', index.post)
+app.get('/release/:id', index.getRelease)
 
 app.listen(PORT, function () {
   console.log('Listening on port', PORT)
