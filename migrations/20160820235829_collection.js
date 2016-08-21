@@ -1,4 +1,3 @@
-
 exports.up = function (knex, Promise) {
   return knex.schema.createTable('collection', function (table) {
     table.increments('id').primary()

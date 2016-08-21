@@ -50,14 +50,14 @@ table {
 /*my css */
 
 body {
-		font-family: "balboa-plus-primary",sans-serif;
-		font-size: 1rem;
-		letter-spacing: .2px;
-    min-width:600px;
-    flex-direction: column;
-    align-items: center;
-		background-image: url('/images/45rpm-background1.jpg');
-		background-size:cover;
+	/*font-family: "balboa-plus-primary",sans-serif;
+	font-size: 1rem;
+	letter-spacing: .2px;*/
+	min-width:600px;
+	flex-direction: column;
+	align-items: center;
+	/*background-image: url('/images/45rpm-background1.jpg');
+	background-size:cover;*/
 
 }
 
@@ -65,12 +65,15 @@ header {
   min-width:600px;
   padding-top:20px;
 	padding-bottom:20px;
-  margin-bottom:10px;
+  margin-bottom:20px;
   background-color: black;
   color: white;
 }
 
 h1 {
+	font-family: "balboa-plus-primary",sans-serif;
+	font-size: 1rem;
+	letter-spacing: .2px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	font-size: 4rem;
@@ -89,7 +92,9 @@ th, td {
     border: 1px solid #999;
 }
 th {
-    background: #ccc;
+text-decoration: underline;
+font-weight:bold;
+
 }
 
 form span ,
@@ -100,10 +105,32 @@ form button {
 form input,
 form button {
 	border-width: 2px;
-	border-radius: 4px;
+	border-radius: 5px;
 
 }
 button {
 	font-family: "balboa-plus-primary",sans-serif;
 
+}
+section {
+	font-family: "balboa-plus-primary",sans-serif;
+	font-size: 1rem;
+	letter-spacing: .2px;
+	}
+
+.results-table {
+	font-family: Arial;
+
+
+
+}
+
+.release-id {
+	display: none;
+}
+.collection-button {
+	position: absolute;
+	top: 33px;
+	right: 140px;
+	font-size: 1.5rem;
 }
