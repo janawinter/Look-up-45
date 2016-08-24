@@ -53,6 +53,7 @@ body {
 	/*font-family: "balboa-plus-primary",sans-serif;
 	font-size: 1rem;
 	letter-spacing: .2px;*/
+
 	min-width:600px;
 	flex-direction: column;
 	align-items: center;
@@ -78,6 +79,22 @@ h1 {
 	margin-bottom: 0px;
 	font-size: 4rem;
 }
+.message {
+	display: none;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-family: Arial;
+	font-size: 1rem;
+	color: #3C763D;
+	background-color: #DFF0D8;
+	border: 1px solid #D6E9C6;
+	border-radius: 4px;
+	padding: 10px;
+
+}
+.message strong {
+	font-weight: bold;
+}
 .container {
 	margin: 0 auto;
 	max-width: 600px;
@@ -85,16 +102,20 @@ h1 {
 
 }
 table {
+		font-family: Arial;
     margin: 10px;
+		border:1px solid #999
+}
+thead {
+	border:1px solid #999
 }
 th, td {
     padding: 5px;
-    border: 1px solid #999;
+    /*border: 1px solid #999;*/
 }
 th {
-text-decoration: underline;
+/*text-decoration: underline;*/
 font-weight:bold;
-
 }
 
 form span ,
@@ -105,13 +126,21 @@ form button {
 form input,
 form button {
 	border-width: 2px;
-	border-radius: 5px;
+	border-radius: 30px;
 
 }
+
 button {
+	border-radius: 30px;
 	font-family: "balboa-plus-primary",sans-serif;
-
+	background-color: #DCDCDC;
 }
+
+button a {
+	text-decoration: none;
+	color:#000;
+}
+
 section {
 	font-family: "balboa-plus-primary",sans-serif;
 	font-size: 1rem;
@@ -121,14 +150,22 @@ section {
 .results-table {
 	font-family: Arial;
 
-
-
+}
+/*zebra striping*/
+tbody tr:nth-child(odd) {
+   background-color: #f9f9f9;
 }
 
 .release-id {
 	display: none;
 }
 .collection-button {
+	position: absolute;
+	top: 33px;
+	right: 140px;
+	font-size: 1.5rem;
+}
+.back-button {
 	position: absolute;
 	top: 33px;
 	right: 140px;

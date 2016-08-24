@@ -11,35 +11,17 @@ module.exports = {
 }
 
 function post (req, res) {
-  console.log(req)
+  //console.log(req)
   knex('collection')
   .insert({
     artist:req.body.artist,
+    year:req.body.year,
     catno:req.body.catno,
     price:req.body.price,
     releaseId:req.body.releaseId
   })
-  .then({function () {
+  .then(function () {
     res.status(204).send('updated collection')
-    }
-  })
-  .catch(err => {
-    res.status(500).send('DATABASE ERROR: ' + err.message)
-  })
-}
-
-function post (req, res) {
-  console.log(req)
-  knex('collection')
-  .insert({
-    artist:req.body.artist,
-    catno:req.body.catno,
-    price:req.body.price,
-    releaseId:req.body.releaseId
-  })
-  .then({function () {
-    res.status(204).send('updated collection')
-    }
   })
   .catch(err => {
     res.status(500).send('DATABASE ERROR: ' + err.message)
