@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -49,6 +49,8 @@ table {
 
 /*my css */
 
+
+
 body {
 	/*font-family: "balboa-plus-primary",sans-serif;
 	font-size: 1rem;
@@ -63,12 +65,12 @@ body {
 }
 
 header {
-  min-width:600px;
-  padding-top:20px;
+	min-width:600px;
+	padding-top:20px;
 	padding-bottom:20px;
-  margin-bottom:20px;
-  background-color: black;
-  color: white;
+	margin-bottom:20px;
+	background-color: black;
+	color: white;
 }
 
 h1 {
@@ -79,6 +81,14 @@ h1 {
 	margin-bottom: 0px;
 	font-size: 4rem;
 }
+
+.img {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+
+}
+
+
 .message {
 	display: none;
 	margin-top: 30px;
@@ -102,34 +112,45 @@ h1 {
 
 }
 table {
-		font-family: Arial;
-    margin: 10px;
-		border:1px solid #999
+	font-family: Arial;
+	margin: 10px;
+	border:1px solid #999
 }
+
 thead {
 	border:1px solid #999
 }
+
 th, td {
-    padding: 5px;
-    /*border: 1px solid #999;*/
-}
-th {
-/*text-decoration: underline;*/
-font-weight:bold;
+	padding: 5px;
+
 }
 
+th {
+	font-weight:bold;
+}
+
+img {
+padding-top: 50px;
+padding-bottom: 50px;
+
+}
 form span ,
 form input,
 form button {
+	margin-top:20px;
 	font-size: 2rem;
 }
+
+
+
 form input,
 form button {
+	margin-top:
 	border-width: 2px;
 	border-radius: 30px;
-
+	background-color: #DCDCDC;
 }
-
 button {
 	border-radius: 30px;
 	font-family: "balboa-plus-primary",sans-serif;
@@ -141,11 +162,21 @@ button a {
 	color:#000;
 }
 
+footer {
+	min-width:600px;
+	padding-top:20px;
+	padding-bottom:20px;
+	margin-top: 200px;
+	margin-bottom:20px;
+	background-color: black;
+	color: white;
+	content: "&copy; Jana Winter";
+}
 section {
 	font-family: "balboa-plus-primary",sans-serif;
 	font-size: 1rem;
 	letter-spacing: .2px;
-	}
+}
 
 .results-table {
 	font-family: Arial;
@@ -153,9 +184,11 @@ section {
 }
 /*zebra striping*/
 tbody tr:nth-child(odd) {
-   background-color: #f9f9f9;
+	background-color: #f9f9f9;
 }
-
+.export {
+		font-family: Arial;
+}
 .release-id {
 	display: none;
 }

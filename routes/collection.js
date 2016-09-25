@@ -31,12 +31,12 @@ function post (req, res) {
 
 function get (req, res) {
   knex('collection')
-    .select()
-    .then(function (collection) {
-      res.render('collection', { collection: collection })
-    })
-    .catch(function (err) {
-      res.status(500).send('DATABASE ERROR: ' + err.message)
-    })
+  .select()
+  .then(function (collection) {
+    res.render('collection', { collection: collection })
+  })
+  .catch(function (err) {
+    res.status(500).send('DATABASE ERROR: ' + err.message)
+  })
 
 }

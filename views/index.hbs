@@ -20,48 +20,49 @@
     <div class="container">
       <section>
         <img src="/images/logo.png" alt="Look Up 45" />
-        <div class="message"><strong></strong> has been added to collection</div>
-      <section>
-        <form action="/" method="post">
-          <span>Enter your catalogue number:</span><input type="text" name="id"><button>Go</button>
-        </form>
-          </section>
-          <section class= "results-table">
-        {{#if releaseData}}
-      <table>
-        <thead>
-          <th>Title</th>
-          <th>Year</th>
-          <th>Country</th>
-          <th>Catalogue Number</th>
-          <th>Format</th>
-          <th>Price</th>
-          <th>Add</th>
-      </thead>
-      <tbody>
-     {{#each releaseData}}
-      <tr>
-        <td class="title">{{title}}</td>
-        <td class="year">{{year}}</td>
-        <td class="country">{{country}}</td>
-        <td class="catno">{{catno}}</td>
-        <td>
-          {{#each format}}
-            {{this}}
-          {{/each}}
-        </td>
-        <td class="price">${{price}}</td>
-        <td>
-          <span class="release-id">{{id}}</span>
-          <a href="#" class="add-to-collection">Add</a>
-        </td>
-      </tr>
-      {{/each}}
-    </tbody>
-      </table>
-      {{/if}}
-    </section>
-  </div>
- </div>
-</body>
-</html>
+        <div class="message">&#10004;<strong></strong> has been added to collection</div>
+        <section>
+          <form action="/" method="post">
+            <span>Enter your catalogue number:</span><input type="text" name="id"><button>Go</button>
+          </form>
+        </section>
+        <section class= "results-table">
+          {{#if releaseData}}
+          <table>
+            <thead>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Country</th>
+              <th>Catalogue Number</th>
+              <th>Format</th>
+              <th>Price</th>
+              <th>Add</th>
+            </thead>
+            <tbody>
+              {{#each releaseData}}
+              <tr>
+                <td class="title">{{title}}</td>
+                <td class="year">{{year}}</td>
+                <td class="country">{{country}}</td>
+                <td class="catno">{{catno}}</td>
+                <td>
+                  {{#each format}}
+                  {{this}}
+                  {{/each}}
+                </td>
+                <td class="price">${{price}}</td>
+                <td>
+                  <span class="release-id">{{id}}</span>
+                  <a href="#" class="add-to-collection"><button type="button" name="button">Add</button></a>
+                </td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+          {{/if}}
+        </section>
+      </div>
+    </div>
+    <footer> &copy; Jana Winter 2016 </footer>
+  </body>
+  </html>

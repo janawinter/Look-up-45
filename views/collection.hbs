@@ -14,33 +14,35 @@
     <header>
       <div class="container">
         <h1>My Collection</h1>
-          <button class ="back-button"><a href="/">Back to Look-up</a></button>
+        <button class ="back-button"><a href="/">Back to Look-up</a></button>
       </div>
     </header>
     <div class="container">
       <section>
         <img src="/images/logo.png" alt="Look Up 45" />
-      <section>
-      <table>
-        <thead>
-          <th>Title</th>
-          <th>Year</th>
-          <th>Price</th>
-          <th>View on Discogs</th>
-      </thead>
-     {{#each collection}}
-      <tr>
-        <td class="title">{{artist}}</td>
-        <td class="year">{{year}}</td>
-        <td class="price">{{price}}</td>
-        <td>
-          <a href="https://www.discogs.com/release/{{releaseId}}" target="_blank" class="view-on-discogs">View on Discogs</a>
-        </td>
-      </tr>
-      {{/each}}
-      </table>
-    </section>
-  </div>
- </div>
-</body>
-</html>
+        <section>
+          <table>
+            <thead>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Price</th>
+              <th>View on Discogs</th>
+            </thead>
+            {{#each collection}}
+            <tr>
+              <td class="title">{{artist}}</td>
+              <td class="year">{{year}}</td>
+              <td class="price">{{price}}</td>
+              <td>
+                <a href="https://www.discogs.com/release/{{releaseId}}" target="_blank" class="view-on-discogs">View on Discogs</a>
+              </td>
+            </tr>
+            {{/each}}
+          </table>
+            <div class="export"> Export CSV </div>
+        </section>
+      </div>
+    </div>
+    <footer> &copy; Jana Winter 2016 </footer>
+  </body>
+  </html>
