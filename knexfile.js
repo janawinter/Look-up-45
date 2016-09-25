@@ -17,10 +17,6 @@ module.exports = {
       user:     'username',
       password: 'password'
     },
-    pool: {
-      min: 2,
-      max: 10
-    },
     migrations: {
       tableName: 'knex_migrations'
     }
@@ -29,13 +25,11 @@ module.exports = {
   production: {
     client: 'postgresql',
     connection: {
+      host: 'ec2-54-235-90-96.compute-1.amazonaws.com',
+      port:'5432',
       database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
-    pool: {
-      min: 2,
-      max: 10
+      user: 'ahyzplqbdqjeha',
+      password: process.env.DBPWD
     },
     migrations: {
       tableName: 'knex_migrations'
