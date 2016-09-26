@@ -6,8 +6,7 @@
   "scripts": {
     "knex": "knex",
     "start": "node-inspector --web-port=8888 & nodemon --debug index.js",
-    "test": "tape 'tests/**/*.test.js' | tap-spec",
-    "heroku-postbuild": "npm run knex migrate:latest"
+    "test": "tape 'tests/**/*.test.js' | tap-spec"
   },
   "repository": {
     "type": "git",
