@@ -27,7 +27,7 @@ module.exports = {
     connection: {
       host: 'ec2-54-235-90-96.compute-1.amazonaws.com',
       port:'5432',
-      database: 'my_db',
+      database: 'dbkdio4mqv6k91',
       user: 'ahyzplqbdqjeha',
       password: process.env.DBPWD
     },
